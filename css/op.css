@@ -1,0 +1,148 @@
+/* op */
+#open{
+  height: 800px;
+  align-items: end;
+  box-sizing: border-box;
+  background-color: #222;
+}
+#open h2{
+  color: #a38f70;
+  transform: translateX(-500px);
+}
+
+#open h3{
+  color: #161533;
+  margin-top: 50px;
+  font-size: 20px;
+  transform: translateX(40%) ;
+}
+
+#open p{
+  color: #fff;
+  margin-top: 20px;
+  transform: translateX(25%);
+  
+}
+#open p::before{
+  content: url(../image/Calendar_month.png);
+}
+
+
+
+#open section{
+  position: relative;
+  margin-right: 50px;
+  display: flex;
+  width: 1000px;
+  height: 100%;
+}
+
+
+#open section .calender{
+  position: absolute;
+  left: 0;
+  width: 70%;
+  height: inherit;
+  background-color: #BE2843;
+}
+
+#open  section .cal_detail{
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: inherit;
+    background-color: #fff;
+  }
+
+/* 캘린더 */
+
+
+.calbt{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.calbt > a:nth-child(3) > img{transform: rotate(180deg);}
+
+.calbt a{
+  width: max-content;
+  height: 40px;
+  border-radius: 40px;
+  padding: 20px 30px 10px;
+  background-color: #161533;
+  color: #fff;
+}
+
+.caltbbd{
+  background-color: #fff;
+  margin: 15px auto;
+  width: 520px;
+  height: 320px;
+  border-radius: 20px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caltb{
+  border-collapse: collapse;
+  background-color: #fff;
+  margin: 15px auto;
+  border-radius: 15px;
+  width: 500px;
+  height: 300px;
+  font-size: 14px;
+}
+.caltb td{
+  width: 12%;
+  height: 40px;
+  text-align: center;  
+  transition: 0.2s cubic-bezier(0.195, 1.175, 0.565, 1.650); 
+}
+
+tbody td:hover{transform: scale(1.3);}
+
+.caltb thead{background-color: #161533; color: #fff;}
+.calhd td:first-child,.calhd td:last-child{color: #b1fccb;}
+.calhd td:first-child{border-radius: 10px 0 0 10px;}
+.calhd td:last-child{border-radius: 0 10px 10px 0;}
+
+.calbd{color: #161533;}
+.calbd > tr > td:first-child,.calbd td:last-child{color: #BE2843;}
+
+.bgday{color: #a38f70;}
+
+.today{
+  display: inline-block;
+  color: #fff;
+  background-color: #BE2843;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-content: center;
+}
+
+/*  */
+
+.cal_detail{
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.cdt-list li:nth-child(1){color: #BE2843;}
+.cdt-list li:nth-child(2){font-weight: 900;}
+.cdt-list li:nth-child(3){font-size: 12px; color: #BE2843;}
+.cdt-list li:nth-child(4) img {width: 100%;}
+.cdt-list li:nth-child(5){
+  width: max-content;
+  height: 20px;
+  border-radius: 40px;
+  padding: 10px 20px 10px;
+  background-color: #BE2843;
+  margin: 10px auto;
+  color: #fff;
+  font-size: 12px;
+}
+
+.cdt-list img{margin-top: 10px;}
